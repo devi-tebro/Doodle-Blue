@@ -1,0 +1,148 @@
+<pre>let strong=[40,10,5,20,30]
+let res=strong.sort((a,b)=>a-b) 
+console.log(res);
+
+let number=[10,20,30,40]
+let res1=number.reduce((total,sum)=>total+sum,0)
+console.log(res1);
+
+let numbers=[10,20,30,40,50]
+let a=numbers.slice(1,3)
+let b=numbers.splice(2,1)
+console.log(a)
+console.log(b)
+
+let num=[10,20,15,5]
+let result=num.some((n)=>{return n>20})
+console.log(result)
+
+let num1=[10,20,15,5]
+let resultt=num1.every((n)=>{return n<30})
+console.log(result)
+</pre>
+
+
+<h3>object</h3>
+<pre>const employee ={
+    name: "Arun",
+    salary:12345
+}
+console:log(employee.name);
+console.log(employee["salary"]);
+
+employee.salary=35000;
+console.log(employee.salary);
+
+employee.city="chennai";
+delete employee.city;
+console.log(employee);
+</pre>
+
+<h3>nested object</h3>
+<pre>const student={
+    name: "priya",
+    address:{
+        city:"Chennai",
+        state:"Tamil Nadu"
+    }
+};
+
+console.log(student.name);
+console.log(student.address.city);
+</pre>
+
+<h3>deconstruct</h3>
+<pre>const student={
+    name:"riya",
+    age:12,
+    course:"react"
+};
+const{name, age, course}=students;
+
+console.log(name);
+console.log(age);
+console.log(course);
+</pre>
+
+<h3>de-construct rename and default</h3>
+<pre>const user={
+    name:"priya"
+};
+const{
+    name:studentname, //only property name replaced not the name priya
+    city="chennai"
+}=user;
+
+console.log(studentname)
+console.log(city);
+</pre>
+
+<h3>spread-object</h3>
+<pre>const orginal={
+    name:"Neiran",
+    age:20,
+}
+const updated={
+    orginal,
+    age:21,
+    city:"Chennai"
+}
+console.log(orginal)
+console.log(updated)</pre>
+
+<h3>spread-combine-onj</h3>
+<pre>const personal={
+  name:"John",
+  age:30,
+}
+const professional={
+  company:"ABC Corp",
+  job:"Developer"
+}
+const combined={
+    personal,
+    professional
+}
+console.log(combined)</pre>
+
+<h3>template literals</h3>
+<pre>const name = "Priya";
+const age = 20;
+
+console.log(`My name is ${name}`);
+console.log(`I am ${age} years old`);
+
+console.log(`My name is ${name} and I am ${age} years old`);</pre>
+
+<h3>spread_array</h3>
+<pre>const first=[1,2,3]
+const second=[4,5,6]
+
+const combinedArray=[...first,...second]
+console.log(combinedArray)
+
+const copy =[...first]
+console.log(copy)</pre>
+
+<h3>optional-chaining</h3>
+<p>interview qstn</p>
+<pre>const user={
+    name:"priya",
+address:{city:"chennai",
+state : "TamilNadu"}
+};
+console.log(user.address?city);
+console.log(user.contact?.phone)
+</pre>
+<p>o/p undefined</p>
+
+<h3>nullish coalescing</h3>
+<pre>const username=null;
+    const age=0;
+    const city=undefined;
+
+    console.log(username ?? "guest");
+    console.log(age??18);
+    console.log(city??"chennai")?
+</pre>
+<p>customised o/p for empty values</p>

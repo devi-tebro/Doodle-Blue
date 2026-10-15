@@ -1,0 +1,509 @@
+
+/* =========================
+   1. BASIC PAGE SETTINGS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #172033;
+    background-color: #f4f8fc;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, p {
+    margin-top: 0;
+}
+
+/* =========================
+   2. NAVIGATION BAR
+========================= */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 10px 18px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e1e9f3;
+    box-shadow: 0 2px 8px rgba(25, 50, 90, 0.06);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-shrink: 0;
+    color: #10234c;
+    font-size: 15px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.logo-icon {
+    font-size: 17px;
+}
+
+.logo-blue {
+    color: #1765d1;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-links a {
+    padding: 6px 9px;
+    border-radius: 5px;
+    color: #27344b;
+    font-size: 10px;
+    font-weight: 600;
+    transition: background-color 0.2s ease,
+                color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #0759d5;
+    background-color: #e4efff;
+}
+
+/* =========================
+   3. MAIN EVENT CONTAINER
+========================= */
+
+.event-container {
+    padding: 18px 4px 24px;
+    background-color: #f4f8fc;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #1765d1;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   4. EVENT HEADING
+========================= */
+
+.event-heading {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-bottom: 2px;
+}
+
+.event-heading h1 {
+    margin-bottom: 0;
+    color: #10234c;
+    font-size: 25px;
+    font-weight: 750;
+    line-height: 1.4;
+}
+
+.category-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 12px;
+    background-color: #e4efff;
+    color: #0759d5;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.event-subtitle {
+    margin-bottom: 18px;
+    color: #566174;
+    font-size: 11px;
+}
+
+/* =========================
+   5. EVENT CONTENT LAYOUT
+========================= */
+
+.event-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr);
+    align-items: start;
+    gap: 18px;
+}
+
+.event-main {
+    min-width: 0;
+}
+
+/* =========================
+   6. EVENT IMAGE
+========================= */
+
+.event-image {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid #e1e9f3;
+    border-radius: 6px;
+    background-color: #e8eef6;
+}
+
+/* =========================
+   7. ABOUT THE EVENT
+========================= */
+
+.event-description {
+    margin-top: 14px;
+}
+
+.event-description h2 {
+    margin-bottom: 5px;
+    color: #10234c;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.event-description p {
+    color: #566174;
+    font-size: 10px;
+    line-height: 1.7;
+    text-align: left;
+}
+
+/* =========================
+   8. EVENT INFORMATION CARD
+========================= */
+
+.event-info {
+    min-width: 0;
+    padding: 13px 11px;
+    border: 1px solid #e1e9f3;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 7px rgba(25, 50, 90, 0.05);
+}
+
+.event-info h2 {
+    margin-bottom: 13px;
+    color: #10234c;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.info-icon {
+    display: inline-block;
+    width: 16px;
+    flex-shrink: 0;
+    color: #172033;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.info-item h3 {
+    margin-bottom: 1px;
+    color: #27344b;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.info-item p {
+    color: #566174;
+    font-size: 9px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+/* =========================
+   9. REGISTER BUTTON
+========================= */
+
+.register-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    margin-top: 13px;
+    padding: 9px 7px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0865e8;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+.register-button:hover {
+    transform: translateY(-1px);
+    background-color: #064eb5;
+}
+
+/* =========================
+   10. FOOTER
+========================= */
+
+.footer {
+    padding: 17px 22px 10px;
+    background-color: #10243c;
+    color: #ffffff;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+.footer-brand h3 {
+    margin-bottom: 7px;
+    color: #ffffff;
+    font-size: 11px;
+}
+
+.footer-brand p {
+    max-width: 245px;
+    color: #cbd5e1;
+    font-size: 9px;
+    line-height: 1.6;
+}
+
+.footer-links h4,
+.footer-social h4 {
+    margin-bottom: 7px;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.footer-links a {
+    display: block;
+    width: fit-content;
+    margin-bottom: 2px;
+    color: #cbd5e1;
+    font-size: 9px;
+    line-height: 1.4;
+}
+
+.footer-links a:hover {
+    color: #60a5fa;
+}
+
+/* Social media icons */
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-top: 8px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #263c56;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.social-icons a:hover {
+    background-color: #1765d1;
+}
+
+/* Copyright */
+
+.copyright {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 9px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    color: #c4cfdd;
+    font-size: 9px;
+    text-align: center;
+}
+
+/* =========================
+   11. TABLET SCREENS
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 10px 12px;
+    }
+
+    .nav-links {
+        gap: 2px;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        padding: 6px;
+        font-size: 9px;
+    }
+
+    .event-layout {
+        grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .event-image {
+        height: 180px;
+    }
+
+    .event-info {
+        padding: 12px 9px;
+    }
+
+    .footer-content {
+        gap: 18px;
+    }
+}
+
+/* =========================
+   12. MOBILE SCREENS
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 8px;
+    }
+
+    .navbar {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 12px;
+    }
+
+    .nav-links {
+        width: 100%;
+        gap: 3px;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        padding: 6px 7px;
+        font-size: 10px;
+    }
+
+    .event-container {
+        padding: 16px 4px 22px;
+    }
+
+    .event-heading h1 {
+        font-size: 22px;
+    }
+
+    .event-subtitle {
+        margin-bottom: 15px;
+        font-size: 10px;
+    }
+
+    .event-layout {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .event-image {
+        height: 200px;
+    }
+
+    .event-description {
+        margin-top: 12px;
+    }
+
+    .event-description h2 {
+        font-size: 13px;
+    }
+
+    .event-description p {
+        font-size: 10px;
+    }
+
+    .event-info {
+        padding: 15px;
+    }
+
+    .event-info h2 {
+        font-size: 13px;
+    }
+
+    .info-item h3 {
+        font-size: 10px;
+    }
+
+    .info-item p {
+        font-size: 10px;
+    }
+
+    .register-button {
+        padding: 10px;
+        font-size: 11px;
+    }
+
+    .footer {
+        padding: 16px 15px 10px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .copyright {
+        font-size: 9px;
+    }
+}

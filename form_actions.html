@@ -1,0 +1,24 @@
+<!DOCTYPE html >
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+        content="SAEC Website">
+        <title>SAE College</title>
+    </head>
+    <body>
+        <form action="/register" method="post">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" required>
+            <label for="course">Course</label>
+            <select id="course" name="course"> 
+                <option value="AI">Artificial Intelligence</option>
+                <option value="CSE">Computer Science</option>
+                <option value="EEE">Electronics</option>
+            </select>
+            <button type="submit">Register</button>
+        </form>
+    </body>
+</html>
