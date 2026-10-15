@@ -13,7 +13,7 @@ There are six pages:
 index.html: the home page, with a banner, a few featured events and the event categories
 about.html: what the site is for, plus the types of events
 events.html: every event as a card, with a search box at the top
-event-details.html: the full details of one event (Tech Fest 2026) and a button to register
+event-details.html (Tech Fest 2026), cultural-details.html, sports-details.html, photography-details.html, aiworkshop-details.html, career-details.html: each html page is a full detail of events from event.html and a button to register
 schedule.html: a table with the date, time and venue of each event
 register.html: the registration form
 
