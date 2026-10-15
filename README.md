@@ -38,6 +38,5 @@ Repeated pieces like cards and buttons
 A table for the schedule and a form for registration
 CSS for colors, spacing and layout (flexbox and grid)
 A media query so it also works on a phone
-A little JavaScript for the search box and the form message
 
 If you're learning too, I'd suggest doing the same thing: get the plain page working first, and only then make it pretty.
