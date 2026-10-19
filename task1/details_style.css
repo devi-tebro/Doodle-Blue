@@ -1,8 +1,3 @@
-
-/* =========================
-   1. BASIC PAGE SETTINGS
-========================= */
-
 * {
     margin: 0;
     padding: 0;
@@ -20,21 +15,40 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
     color: #172033;
-    background-color: #f4f8fc;
+    background: #f4f8fc;
 }
 
 a {
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
 }
 
 h1, h2, h3, h4, p {
     margin-top: 0;
+    line-height: 1.25;
 }
 
-/* =========================
-   2. NAVIGATION BAR
-========================= */
+h2 {
+    margin-bottom: 5px;
+    color: #10234c;
+    font-size: 21px;
+}
+
+h3 {
+    margin-bottom: 7px;
+    color: #10234c;
+    font-size: 15px;
+}
+
+p {
+    color: #566174;
+    font-size: 12px;
+}
+
+.site-header {
+    position: relative;
+    z-index: 2;
+}
 
 .navbar {
     display: flex;
@@ -42,28 +56,21 @@ h1, h2, h3, h4, p {
     justify-content: space-between;
     gap: 18px;
     padding: 10px 18px;
-    background-color: #ffffff;
+    background: #fff;
     border-bottom: 1px solid #e1e9f3;
     box-shadow: 0 2px 8px rgba(25, 50, 90, 0.06);
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 5px;
     flex-shrink: 0;
     color: #10234c;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 700;
-    white-space: nowrap;
 }
 
-.logo-icon {
-    font-size: 17px;
-}
-
-.logo-blue {
-    color: #1765d1;
+.logo i {
+    margin-right: 5px;
+    color: #173b80;
 }
 
 .nav-links {
@@ -73,24 +80,19 @@ h1, h2, h3, h4, p {
 }
 
 .nav-links a {
-    padding: 6px 9px;
+    padding: 6px 10px;
     border-radius: 5px;
     color: #27344b;
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 600;
-    transition: background-color 0.2s ease,
-                color 0.2s ease;
+    transition: background-color .2s ease, color .2s ease;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
     color: #0759d5;
-    background-color: #e4efff;
+    background: #e4efff;
 }
-
-/* =========================
-   3. MAIN EVENT CONTAINER
-========================= */
 
 .event-container {
     padding: 18px 4px 24px;
@@ -108,10 +110,6 @@ h1, h2, h3, h4, p {
 .back-link:hover {
     text-decoration: underline;
 }
-
-/* =========================
-   4. EVENT HEADING
-========================= */
 
 .event-heading {
     display: flex;
@@ -145,10 +143,6 @@ h1, h2, h3, h4, p {
     font-size: 11px;
 }
 
-/* =========================
-   5. EVENT CONTENT LAYOUT
-========================= */
-
 .event-layout {
     display: grid;
     grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr);
@@ -160,10 +154,6 @@ h1, h2, h3, h4, p {
     min-width: 0;
 }
 
-/* =========================
-   6. EVENT IMAGE
-========================= */
-
 .event-image {
     display: block;
     width: 100%;
@@ -174,10 +164,6 @@ h1, h2, h3, h4, p {
     border-radius: 6px;
     background-color: #e8eef6;
 }
-
-/* =========================
-   7. ABOUT THE EVENT
-========================= */
 
 .event-description {
     margin-top: 14px;
@@ -196,10 +182,6 @@ h1, h2, h3, h4, p {
     line-height: 1.7;
     text-align: left;
 }
-
-/* =========================
-   8. EVENT INFORMATION CARD
-========================= */
 
 .event-info {
     min-width: 0;
@@ -248,10 +230,6 @@ h1, h2, h3, h4, p {
     overflow-wrap: anywhere;
 }
 
-/* =========================
-   9. REGISTER BUTTON
-========================= */
-
 .register-button {
     display: flex;
     align-items: center;
@@ -267,18 +245,12 @@ h1, h2, h3, h4, p {
     font-size: 10px;
     font-weight: 600;
     text-align: center;
-    transition: background-color 0.2s ease,
-                transform 0.2s ease;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .register-button:hover {
-    transform: translateY(-1px);
-    background-color: #064eb5;
+    transform: translateY(-1px); background-color: #064eb5;
 }
-
-/* =========================
-   10. FOOTER
-========================= */
 
 .footer {
     padding: 17px 22px 10px;
@@ -329,8 +301,6 @@ h1, h2, h3, h4, p {
     color: #60a5fa;
 }
 
-/* Social media icons */
-
 .social-icons {
     display: flex;
     align-items: center;
@@ -356,8 +326,6 @@ h1, h2, h3, h4, p {
     background-color: #1765d1;
 }
 
-/* Copyright */
-
 .copyright {
     max-width: 1200px;
     margin: 0 auto;
@@ -368,9 +336,43 @@ h1, h2, h3, h4, p {
     text-align: center;
 }
 
-/* =========================
-   11. TABLET SCREENS
-========================= */
+
+
+
+h2 { font-size: 25px; }
+h3 { font-size: 19px; }
+p { font-size: 16px; }
+
+.logo { font-size: 20px; }
+.nav-links a { font-size: 15px; }
+
+.back-link { font-size: 15px; }
+
+.event-heading h1 { font-size: 33px; }
+.category-badge { font-size: 14px; }
+.event-subtitle { font-size: 16px; }
+
+.event-description h2 { font-size: 20px; }
+.event-description p { font-size: 15px; }
+
+.event-info h2 { font-size: 18px; }
+
+.info-item h3 { font-size: 16px; }
+.info-item p { font-size: 14px; }
+
+.register-button { font-size: 15px; }
+
+.footer-brand h3 { font-size: 16px; }
+
+.footer-brand p,
+.footer-links a { font-size: 14px; }
+
+.footer-links h4,
+.footer-social h4 { font-size: 16px; }
+
+.copyright { font-size: 13px; }
+
+
 
 @media (max-width: 900px) {
 
@@ -407,10 +409,6 @@ h1, h2, h3, h4, p {
         gap: 18px;
     }
 }
-
-/* =========================
-   12. MOBILE SCREENS
-========================= */
 
 @media (max-width: 600px) {
 

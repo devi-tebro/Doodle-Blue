@@ -16,7 +16,7 @@ body {
     line-height: 1.5;
     color: #172033;
     background-color: #f4f8fc;
-}
+} 
 
 a {
     text-decoration: none;
@@ -67,8 +67,7 @@ header {
     color: #27344b;
     font-size: 10px;
     font-weight: 600;
-    transition: background-color 0.2s ease,
-                color 0.2s ease;
+    transition: background-color 0.2s ease,color 0.2s ease;
 }
 
 .nav-links a:hover,
@@ -146,8 +145,7 @@ header {
     border-radius: 7px;
     background-color: #ffffff;
     box-shadow: 0 2px 7px rgba(25, 50, 90, 0.06);
-    transition: transform 0.2s ease,
-                box-shadow 0.2s ease;
+    transition: transform 0.2s ease,box-shadow 0.2s ease;
 }
 
 .event-card:hover {
@@ -241,8 +239,7 @@ header {
     color: #ffffff;
     font-size: 10px;
     font-weight: 600;
-    transition: background-color 0.2s ease,
-                transform 0.2s ease;
+    transition: background-color 0.2s ease,transform 0.2s ease;
 }
 
 .view-details:hover {
@@ -319,6 +316,64 @@ header {
     margin: 0;
     font-size: 9px;
 }
+
+
+
+
+.logo {
+    font-size: 18px;
+}
+
+.nav-links a {
+    font-size: 13px;
+}
+
+.heading h1 {
+    font-size: 29px;
+}
+
+.heading p {
+    font-size: 14px;
+}
+
+.search input {
+    font-size: 14px;
+}
+
+.event-content h2 {
+    font-size: 16px;
+}
+
+.event-info {
+    font-size: 12px;
+}
+
+.description {
+    font-size: 13px;
+}
+
+.event-tag {
+    font-size: 12px;
+}
+
+.view-details {
+    font-size: 13px;
+}
+
+.footer-container h3,
+.footer-container h4 {
+    font-size: 14px;
+}
+
+.footer-container p,
+.quick-links a {
+    font-size: 12px;
+}
+
+.copy p {
+    font-size: 11px;
+}
+
 
 
 @media (max-width: 800px) {

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Register | Campus Events</title>
+        <link rel="stylesheet" href="register-style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a class="logo" href="index.html">
+                    <i class="fa-solid fa-graduation-cap"></i>Campus Events</a>
+
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="events.html">Events</a>
+                    <a href="schedule.html">Schedule</a>
+                    <a href="register.html" class="active">Register</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <div class="hero">
+            <h1>Event Registration</h1>
+            <p>Fill out the form to register for an event.</p>
+        </div>
+
+        <section class="form">
+            <div class="grid">
+                <div class="name">
+                    <p>Full Name <span class="required">*</span></p>
+                    <input type="text" placeholder="Enter your full name" id="name" name="name" required>
+                </div>
+
+                <div class="email">
+                    <p>Email <span class="required">*</span></p>
+                    <input type="email" placeholder="yourname@example.com" id="email" name="email"
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.com" title="Enter a valid email ending with .com (example: name@gmail.com)" required>
+</div>
+
+                <div class="ph">
+                     <p>Phone Number <span class="required">*</span></p>
+
+                    <select id="country-code" name="country-code">
+                        <option value="+91">IN +91</option>
+                        <option value="+1">US +1</option>
+                        <option value="+44">GB +44</option>
+                        <option value="+971">AE +971</option>
+                        <option value="+61">AU +61</option>
+                        <option value="+65">SG +65</option>
+                    </select>
+
+                    <input type="tel" placeholder="Enter your phone number" id="phone"
+                    pattern="[0-9]{10}" maxlength="10" minlength="10" inputmode="numeric" required >
+                </div>
+
+                <div class="dep">
+                    <p>Department <span class="required">*</span></p>
+
+                    <select id="department" name="department" required>
+                        <option value="" disabled selected>Select department</option>
+                        <option value="AI&DS">AI & Data Science</option>
+                        <option value="AIML">AI & Machine Learning</option>
+                        <option value="CSE">Computer Science Engineering</option>
+                        <option value="IT">Information Technology</option>
+                        <option value="EEE">Electrical and Electronics Engineering</option>
+                        <option value="ECE">Electronics and Communication Engineering</option>
+                        <option value="MECH">Mechanical Engineering</option>
+                        <option value="CIVIL">Civil Engineering</option>
+                    </select>
+                </div>
+
+                <div class="events-choice">
+                    <p>Choose an Event <span class="required">*</span></p>
+
+                    <select id="event" name="event" required>
+                        <option value="" disabled selected>Select an event</option>
+                        <option value="Tech Fest 2026">Tech Fest 2026</option>
+                        <option value="Cultural Day">Cultural Day</option>
+                        <option value="Sports meet">Inter-College Sports Meet</option>
+                        <option value="Workshop">AI Workshop</option>
+                        <option value="Photography Contest">Photography</option>
+                        <option value="Career talk">Career talk</option>
+                    </select>
+                </div>
+
+                <div class="date">
+                    <p>Preferred Date <span class="required">*</span></p>
+                    <input type="date" id="date" name="date" required>
+                </div>
+            </div>
+
+            <div class="opt">
+                <p>Message (Optional)</p>
+                <input type="text" placeholder="Any additional Information" id="opt" name="opt">
+            </div>
+
+            <div class="terms">
+                <label>
+                    <input type="checkbox" id="agree" name="agree" required>
+                    I agree to the <a href="terms.html">events and regulations.</a>
+                </label>
+            </div>
+
+            <div>
+                <button>Register</button>
+            </div>
+        </section>
+    </body>
+    <footer class="footer-container" id="contact">
+
+        <div class="campus">
+            <h3>
+                <i class="fa-solid fa-graduation-cap"></i>
+                Campus Events
+            </h3>
+
+            <p>
+                Bringing students together through learning,
+                creativity and collaboration.
+            </p>
+        </div>
+
+        <div class="quick-links">
+            <h4>Quick Links</h4>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="events.html">Events</a>
+            <a href="event-details.html">Details</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="register.html">Register</a>
+        </div>
+
+        <div class="follow">
+            <h4>Follow Us</h4>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/"
+                   aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.instagram.com/"
+                   aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/"
+                   aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="https://www.youtube.com/"
+                   aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="copy">
+            <p>&copy; 2026 Campus Events. All rights reserved.</p>
+        </div>
+    </footer>
+</html>

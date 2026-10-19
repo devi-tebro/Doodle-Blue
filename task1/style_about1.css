@@ -328,6 +328,73 @@ p {
     font-size: 9px;
 }
 
+
+
+h2 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.logo {
+    font-size: 18px;
+}
+
+.nav-links a {
+    font-size: 13px;
+}
+
+.hero h1 {
+    font-size: 29px;
+}
+
+.hero p {
+    font-size: 14px;
+}
+
+.mission h2,
+.events h2 {
+    font-size: 22px;
+}
+
+.mission-card h3 {
+    font-size: 15px;
+}
+
+.mission-card p {
+    font-size: 13px;
+}
+
+.type-card h3 {
+    font-size: 14px;
+}
+
+.type-card p {
+    font-size: 12px;
+}
+
+.mission-card i,
+.type-card i {
+    font-size: 25px;
+}
+
+.footer h3,
+.footer h4 {
+    font-size: 14px;
+}
+
+.footer p,
+.quick-links a {
+    font-size: 12px;
+}
+
+.copy p {
+    font-size: 11px;
+}
+
+
 @media (max-width: 800px) {
     .navbar {
         gap: 8px;
