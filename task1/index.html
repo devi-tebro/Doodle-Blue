@@ -25,7 +25,7 @@
     <main>
         <section class="hero" id="home">
             <div class="hero-content">
-                <h1>Discover. Participate. Grow.</h1>
+                <h1 id="target">Discover. Participate. Grow.</h1>
                 <p>Explore exciting technical, cultural, sports and academic events happening on our campus.</p>
                 <a href="#events" class="primary-button">Explore Events <i class="fa-solid fa-arrow-right"></i></a>
             </div>
@@ -102,7 +102,7 @@
                 <h2>Ready to participate?</h2>
                 <p>Choose an event, bring your ideas, and be part of campus life.</p>
             </div>
-            <a class="primary-button" id="target" href="register.html">Register Now <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="primary-button" href="register.html">Register Now <i class="fa-solid fa-arrow-right"></i></a>
         </section>
     </main>
 
@@ -126,12 +126,16 @@
         </div>
         <div class="footer-bottom"><p>&copy; 2026 Campus Events. All rights reserved.</p></div>
     </footer>
-</body>
-</html>
-<script>
-    const target=document.querySelector("#target");
-    target.addEventListener("dbclick",()=> {
-        target.textContent="You double clicked the box!" ;
-        target.style.backgroundcolor="#bbf7d0";
+    <script> // added to Discover. Participate. Grow.
+    const target = document.querySelector("#target");
+
+    target.addEventListener("dblclick", () => {
+        if (target.textContent === "Discover. Participate. Grow.") {
+            target.textContent = "It's our moto";
+        } else {
+            target.textContent = "Discover. Participate. Grow.";
+        }
     });
 </script>
+</body>
+</html>

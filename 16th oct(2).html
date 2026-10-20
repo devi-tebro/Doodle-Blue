@@ -1,0 +1,80 @@
+<!--doubleclick-->
+
+<script>
+    const target=document.querySelector("#target");
+    target.addEventListener("dbclick",()=> {
+        target.textContent="You double clicked the box!" ;
+        target.style.backgroundcolor="#bbf7d0";
+    });
+</script>
+
+<!--mouseover mouseout-->
+
+
+<script>
+    const target=document.querySelector("#target");
+    const result=document.querySelector("#result");
+
+    target.addEventListener("mouseover",()=>{
+        target.style.backgroundColor="#fed7aa";
+        result.textContent="mouseover fired";
+    });
+
+    target.addEventListener("mouseout",()=>{
+        target.style.backgroundColor="#dbeafe";
+        result.textContent="mouseout fired";
+    });
+</script>
+
+
+<!--hover and right click -->
+
+<script>
+    const target = document.querySelector("#target");
+
+    target.addEventListener("contextmenu", (event) => {
+        event.preventDefault();
+        target.textContent = "Plan Your Events!";
+    });
+
+    target.addEventListener("mouseout", () => {
+        target.textContent = "Event Schedule";
+    });
+</script>
+
+<!--charecter count and button msg-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Character Counter and Button</title>
+</head>
+<body>
+
+    <h2>Character Counter</h2>
+
+    <input type="text" id="input" placeholder="Type something">
+    <p id="count">Total characters: 0</p>
+
+    <button id="btn">Click Me</button>
+    <p id="message"></p>
+
+    <script>
+        const input = document.querySelector("#input");
+        const count = document.querySelector("#count");
+        const btn = document.querySelector("#btn");
+        const message = document.querySelector("#message");
+
+        input.addEventListener("input", () => {
+            count.textContent = "Total characters: " + input.value.length;
+        });
+
+        btn.addEventListener("click", () => {
+            message.textContent = "Button clicked successfully!";
+        });
+    </script>
+
+</body>
+</html>
+

@@ -32,8 +32,8 @@
 
             <div class="page-heading">
                 <div class="heading">
-                    <h1>All Events</h1>
-                    <p>Explore upcoming events and be a part of exciting experiences.</p>
+                    <h1 id="target">All Events</h1>
+                    <p id="result">Explore upcoming events and be a part of exciting experiences.</p>
                 </div>
 
                 <div class="search">
@@ -301,5 +301,17 @@
             <p>&copy; 2026 Campus Events. All rights reserved.</p>
         </div>
     </footer>
+    <script> // added to All Events
+    const target = document.querySelector("#target");
+    const result = document.querySelector("#result");
+
+    target.addEventListener("mouseover", () => {
+        result.textContent = "Looking forward to meet at our college";
+    });
+
+    target.addEventListener("mouseout", () => {
+        result.textContent = "Explore upcoming events and be a part of exciting experiences.";
+    });
+</script>
 </body>
 </html>
