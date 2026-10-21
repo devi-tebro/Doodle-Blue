@@ -39,7 +39,7 @@
                     <p>Email <span class="required">*</span></p>
                     <input type="email" placeholder="yourname@example.com" id="email" name="email"
                         pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.com" title="Enter a valid email ending with .com (example: name@gmail.com)" required>
-</div>
+                </div>
 
                 <div class="ph">
                      <p>Phone Number <span class="required">*</span></p>
@@ -109,7 +109,6 @@
                 <button>Register</button>
             </div>
         </section>
-    </body>
     <footer class="footer-container" id="contact">
 
         <div class="campus">
@@ -165,4 +164,45 @@
             <p>&copy; 2026 Campus Events. All rights reserved.</p>
         </div>
     </footer>
+    
+<script>
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const phone = document.getElementById("phone");
+    const date = document.getElementById("date");
+    const agree = document.getElementById("agree");
+
+    document.querySelector("button").addEventListener("click", function(event) {
+
+        if (name.value.length < 3) {
+            alert("Name must contain at least 3 characters");
+            event.preventDefault();
+        }
+
+        else if (!email.value.includes("@") || !email.value.includes(".")) {
+            alert("Email must contain @ and .");
+            event.preventDefault();
+        }
+
+        else if (phone.value.length != 10) {
+            alert("Phone number must contain 10 digits");
+            event.preventDefault();
+        }
+
+        else if (date.value == "") {
+            alert("Please select a date");
+            event.preventDefault();
+        }
+        else if (!agree.checked) {
+            alert("Please agree to the Terms and Conditions");
+            event.preventDefault();
+        }
+
+        else {
+            alert("Registration successful!");
+        }
+
+    });
+</script>
+</body>
 </html>

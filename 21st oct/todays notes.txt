@@ -1,0 +1,23 @@
+* How does the system knows there's a timeout to run later = event loop
+* call stack : sync , micro stack(executes first) : promise , await , async
+* macro stack : (later executes) : time handlers - settimeout , dom events , fetch , addevent lister
+* eventloop - line by line then call stack micro , macro task 
+* in async await executes line by line doesn't skip timeout 
+
+* prblm : timer finish when other code finishes at the same time which one to excute first , several call back are waiting which runs 1st
+ans =  call stack
+
+
+* js is a single threaded synchronous
+* call stack executes the js in v8 engine
+* call stack runs one piece at a time , it only executes
+
+* workflow :
+-> callstack executes one by one
+-> if the inbuilts have time it is sent to webapi and stays in there for the time mentioned in code
+-> after time over they are sent to their respective stacks (macrostack and microstack())
+-> microstacks executes first
+-> once the callstack is empty and the microstack is empty the eventloop checks for macrostack and executes them
+* browser events goes to wen api , promises goes directly to microstack
+
+* browser api : provides features that handles certain task browser handles waiting but executes is done by js
